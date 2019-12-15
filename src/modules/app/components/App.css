@@ -1,0 +1,5 @@
+.grid {
+    display: grid;
+    grid-template-columns: 29rem 1fr;
+    height: 100%;
+}

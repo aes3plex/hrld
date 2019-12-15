@@ -1,12 +1,16 @@
 import React, { ReactNode } from 'react';
+import { Content } from '../../content/components/Content';
+import { Sidebar } from '../../sidebar/components/Sidebar';
 
-type AppProps = {};
-type AppState = {};
+import './App.css'
 
-export class App extends React.PureComponent<AppProps, AppState> {
+export class App extends React.PureComponent {
     public render(): ReactNode {
         return (
-            <div>Main layout</div>
+            <div className="grid">
+                <Sidebar />
+                <Content />
+            </div>
         );
     }
 }
