@@ -6,7 +6,7 @@
     background: var(--color-surface-top);
 }
 
-.tab-content {
+.tabContent {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-gap: 2rem;
@@ -14,12 +14,12 @@
     padding: 2rem 5.2rem;
 }
 
-.icon-container {
+.iconContainer {
     height: 1.8rem;
     width: 1.8rem;
 }
 
-.text-container {
+.textContainer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
