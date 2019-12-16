@@ -1,0 +1,21 @@
+.tab {
+    height: inherit;
+    padding: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
+    user-select: none;
+    color: var(--color-font-regular);
+    background-color: var(--color-surface-top);
+}
+
+.tab:hover {
+    color: var(--color-font-major);
+}
+
+.active {
+    background-color: var(--color-active);
+    color: var(--color-font-major);
+}
+
+

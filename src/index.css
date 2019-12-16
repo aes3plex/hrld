@@ -12,3 +12,43 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.dark {
+    font-family: 'Roboto', sans-serif !important;
+
+    --color-background: #1F1E24;
+    --color-surface-top: #2D2C33;
+    --color-font-regular: #ADADBE;
+    --color-font-major: #FFFFFF;
+    --color-active: #F51D46;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/font/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/font/Roboto-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/font/Roboto-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/font/Roboto-Bold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+}

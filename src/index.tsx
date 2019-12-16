@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './modules/app/components/App';
+import { App } from './CorePackage/MainModule/components/App';
 
 import './index.css';
 
