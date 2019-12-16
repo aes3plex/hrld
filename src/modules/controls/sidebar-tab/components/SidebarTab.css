@@ -9,3 +9,13 @@
     background-color: var(--color-surface-top);
 }
 
+.tab:hover {
+    color: var(--color-font-major);
+}
+
+.active {
+    background-color: var(--color-active);
+    color: var(--color-font-major);
+}
+
+

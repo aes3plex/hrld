@@ -19,6 +19,8 @@ body {
     --color-background: #1F1E24;
     --color-surface-top: #2D2C33;
     --color-font-regular: #ADADBE;
+    --color-font-major: #FFFFFF;
+    --color-active: #F51D46;
 }
 
 @font-face {

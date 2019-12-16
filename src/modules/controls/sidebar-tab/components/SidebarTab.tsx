@@ -1,13 +1,15 @@
 import React, { ReactNode } from 'react';
 import './SidebarTab.css';
 
-export type TabProps = React.HTMLAttributes<HTMLElement>;
+interface ISidebarTabProps extends React.HTMLAttributes<HTMLElement> {
+    isActive: boolean;
+}
 
-export class SidebarTab extends React.PureComponent<TabProps> {
+export class SidebarTab extends React.PureComponent<ISidebarTabProps> {
     public render(): ReactNode {
-        const { children, ...restProps } = this.props;
+        const { children, isActive } = this.props;
         return (
-            <div className='tab' {...restProps}>
+            <div className = { isActive ? 'active tab' : 'tab'}>
                 {children}
             </div>
         );
