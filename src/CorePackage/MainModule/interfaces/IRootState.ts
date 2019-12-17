@@ -1,5 +1,5 @@
-import {SidebarTab} from "../../SidebarModule/enums/SidebarTab";
+import { SidebarTabType } from '../../SidebarModule/enums/SidebarTabType';
 
 export interface IRootState {
-    activeSidebarTab: SidebarTab
+    activeSidebarTab: SidebarTabType;
 }
