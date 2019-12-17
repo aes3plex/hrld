@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 import styles from './Sidebar.module.css';
-import { SidebarTab } from '../../../UIPackage/SidebarModule/components/SidebarTab';
-import {NotesIcon} from "../../../UIPackage/IconsModule/components/NotesIcon";
+import { SidebarTab } from '../../../UIPackage/SidebarModule';
+import {NotesIcon} from "../../../UIPackage/IconsModule";
+
 
 export class Sidebar extends React.PureComponent {
     public render(): ReactNode {
