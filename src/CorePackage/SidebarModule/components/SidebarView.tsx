@@ -23,6 +23,7 @@ export class SidebarView extends React.PureComponent<ISidebarProps> {
 
         return (
             <div className={styles.sidebar}>
+                <div style={{ height: '40rem' }}></div>
                 <SidebarTab
                     className={styles.tab}
                     isActive={activeTab === SidebarTabType.NOTES}
