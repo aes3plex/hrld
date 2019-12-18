@@ -1,15 +1,24 @@
 import React, { ReactNode } from 'react';
-import './SidebarTab.css';
+import styles from './SidebarTab.module.css';
+import { classList } from '../../../CorePackage/MainModule/common/classList';
 
-interface ISidebarTabProps extends React.HTMLAttributes<HTMLElement> {
+interface ISidebarTabProps
+    extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onSelect'> {
     isActive: boolean;
+    onSelect: () => void;
 }
 
 export class SidebarTab extends React.PureComponent<ISidebarTabProps> {
     public render(): ReactNode {
-        const { children, isActive } = this.props;
+        const { children, isActive, onSelect } = this.props;
         return (
-            <div className = { isActive ? 'active tab' : 'tab'}>
+            <div
+                onClick={onSelect}
+                className={classList({
+                    [styles.tab]: true,
+                    [styles.active]: isActive,
+                })}
+            >
                 {children}
             </div>
         );
