@@ -1,22 +1,31 @@
 import React, { ReactNode } from 'react';
-import styles from './Sidebar.module.css';
+import styles from './SidebarView.module.css';
 import { SidebarTab } from '../../../UIPackage/SidebarModule';
-import { NotesIcon } from '../../../UIPackage/IconsModule';
+import {
+    MessagesIcon,
+    NotesIcon,
+    NotificationsIcon,
+} from '../../../UIPackage/IconsModule';
 import { SidebarTabType } from '../enums/SidebarTabType';
 
-interface ISidebarProps {}
+interface ISidebarProps {
+    activeTab: SidebarTabType;
+    setActiveTab: (tab: SidebarTabType) => void;
+}
 
-export class Sidebar extends React.PureComponent<ISidebarProps> {
+export class SidebarView extends React.PureComponent<ISidebarProps> {
     public handleSelectTab(tab: SidebarTabType): void {
-        console.log(tab);
+        this.props.setActiveTab(tab);
     }
 
     public render(): ReactNode {
+        const { activeTab } = this.props;
+
         return (
             <div className={styles.sidebar}>
                 <SidebarTab
                     className={styles.tab}
-                    isActive={false}
+                    isActive={activeTab === SidebarTabType.NOTES}
                     onSelect={() => this.handleSelectTab(SidebarTabType.NOTES)}
                 >
                     <div className={styles.tabContent}>
@@ -28,26 +37,28 @@ export class Sidebar extends React.PureComponent<ISidebarProps> {
                 </SidebarTab>
                 <SidebarTab
                     className={styles.tab}
-                    isActive={true}
-                    onSelect={() => this.handleSelectTab(SidebarTabType.EMAIL)}
+                    isActive={activeTab === SidebarTabType.MESSAGES}
+                    onSelect={() =>
+                        this.handleSelectTab(SidebarTabType.MESSAGES)
+                    }
                 >
                     <div className={styles.tabContent}>
                         <div className={styles.iconContainer}>
-                            <NotesIcon />
+                            <MessagesIcon />
                         </div>
-                        <div className={styles.textContainer}>Email</div>
+                        <div className={styles.textContainer}>Messages</div>
                     </div>
                 </SidebarTab>
                 <SidebarTab
                     className={styles.tab}
-                    isActive={false}
+                    isActive={activeTab === SidebarTabType.NOTIFICATIONS}
                     onSelect={() =>
                         this.handleSelectTab(SidebarTabType.NOTIFICATIONS)
                     }
                 >
                     <div className={styles.tabContent}>
                         <div className={styles.iconContainer}>
-                            <NotesIcon />
+                            <NotificationsIcon />
                         </div>
                         <div className={styles.textContainer}>
                             Notifications

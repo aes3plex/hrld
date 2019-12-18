@@ -1,5 +1,5 @@
 import { SetActiveSidebarTabAction } from '../actions/SetActiveSidebarTabAction';
-import { IRootState } from '../../MainModule/interfaces/IRootState';
+import { IRootState } from '../../MainModule';
 
 type SidebarAction = SetActiveSidebarTabAction;
 

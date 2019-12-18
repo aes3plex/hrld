@@ -1,5 +1,5 @@
 export enum SidebarTabType {
     NOTES = 'notes',
-    EMAIL = 'email',
+    MESSAGES = 'messages',
     NOTIFICATIONS = 'notifications',
 }
