@@ -1,0 +1,13 @@
+.tile {
+    height: 15rem;
+    background-clip: content-box;
+    background-color: var(--color-surface-bottom);
+    padding: 0.2rem;
+
+}
+
+
+.active {
+    border-left: 3rem solid var(--color-active);
+    background-color: var(--color-surface-top);
+}

@@ -7,12 +7,28 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { classActionMiddleware } from '../middlewares/classActionMiddleware';
 
 import thunk from 'redux-thunk';
+import { generateID } from './generateID';
+import { notesReducer } from '../../NotesModule/reducers/notesReducer';
 
 const initialState: IRootState = {
     activeSidebarTab: SidebarTabType.NOTES,
+    notes: [
+        {
+            id: generateID(),
+            title: 'Lorem1',
+            content: 'Ipsum1',
+        },
+        {
+            id: generateID(),
+            title: 'Lorem2',
+            content: 'Ipsum2',
+        },
+    ],
+    activeNoteId: null,
+    selectedNotesIds: [],
 };
 
-const reducers = [sidebarReducer] as Array<Reducer<IRootState>>;
+const reducers = [sidebarReducer, notesReducer] as Array<Reducer<IRootState>>;
 
 const rootReducer = reduceReducers(initialState, ...reducers) as ReduxReducer<
     IRootState
