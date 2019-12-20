@@ -4,8 +4,8 @@
     grid-gap: 5.5rem;
     grid-area: editor;
     background: var(--color-surface-top);
-    margin: 0.2rem 0;
-    padding: 7.5rem 17.5rem 7.5rem 12.5rem;
+    padding: 7.5rem 12.5rem 7.5rem 12.5rem;
+    overflow: hidden;
 }
 
 .empty {
@@ -35,6 +35,7 @@
     line-height: 2.6rem;
     letter-spacing: 0.01em;
     color: var(--color-font-regular);
+    overflow: auto;
     text-overflow: ellipsis;
     text-align: justify;
 }

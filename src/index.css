@@ -16,6 +16,9 @@ body {
 .dark {
     font-family: 'Roboto', sans-serif !important;
 
+    --color-button-hover: #db1d3e;
+    --color-button-active: #b91e35;
+
     --color-black-shadow: 0, 0, 0;
     --color-sidebar-shadow: 35, 31, 32;
 

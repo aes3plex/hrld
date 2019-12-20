@@ -4,7 +4,7 @@
     align-content: center;
     grid-gap: 2.2rem;
     padding-left: 4rem;
-    margin: 0 0.2rem 0.2rem 0.2rem;
+    margin: 0 0 0.2rem 0.2rem;
     border-left: 0.5rem solid var(--color-surface-bottom);
     background-color: var(--color-surface-bottom);
     cursor: pointer;

@@ -1,6 +1,5 @@
 .tiles {
     grid-area: tiles;
-    margin: 0.2rem 0;
     overflow: auto;
 }
 

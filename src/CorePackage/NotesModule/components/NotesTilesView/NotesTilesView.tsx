@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
-import styles from '../NotesTilesView/NotesTilesView.module.css';
 import { NotesTile } from '../NotesTile/NotesTile';
 import { INote } from '../../interfaces/INote';
+
+import styles from '../NotesTilesView/NotesTilesView.module.css';
 
 interface INotesTilesProps {
     notes: INote[];

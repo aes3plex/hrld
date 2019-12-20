@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import styles from './SidebarView.module.css';
-import { SidebarTab } from '../../../UIPackage/SidebarModule';
+import { SidebarTab } from '../../../UIPackage/ControlsModule';
 import {
     MessagesIcon,
     NotesIcon,
