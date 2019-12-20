@@ -18,7 +18,7 @@
 
 .title {
     font-size: 2.4rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--color-font-major);
     overflow: hidden;
     text-overflow: ellipsis;
@@ -32,6 +32,8 @@
 
 .content {
     font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.01em;
     color: var(--color-font-regular);
     text-overflow: ellipsis;
     text-align: justify;
