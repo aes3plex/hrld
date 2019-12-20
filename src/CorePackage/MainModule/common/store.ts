@@ -17,11 +17,13 @@ const initialState: IRootState = {
             id: generateID(),
             title: 'Lorem1',
             content: 'Ipsum1',
+            createdAt: '12 Mar, 2019',
         },
         {
             id: generateID(),
             title: 'Lorem2',
             content: 'Ipsum2',
+            createdAt: '19 Apr, 2020',
         },
     ],
     activeNoteId: null,

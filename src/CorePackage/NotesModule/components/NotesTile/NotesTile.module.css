@@ -1,13 +1,33 @@
 .tile {
-    height: 15rem;
-    background-clip: content-box;
+    display: grid;
+    align-content: center;
+    grid-gap: 0.5rem;
+    padding-left: 10rem;
     background-color: var(--color-surface-bottom);
-    padding: 0.2rem;
+    margin: 0.2rem;
+    cursor: pointer;
+}
 
+.activeTile {
+    border-left: 0.5rem solid var(--color-active);
+    background-color: var(--color-surface-top);
+}
+
+.title {
+    color: var(--color-font-regular);
+    font-weight: 800;
 }
 
 
-.active {
-    border-left: 3rem solid var(--color-active);
-    background-color: var(--color-surface-top);
+.activeTitle {
+    color: var(--color-font-major);
+}
+
+.date {
+    color: var(--color-font-minor);
+    font-weight: 600;
+}
+
+.activeDate {
+    color: var(--color-font-regular);
 }

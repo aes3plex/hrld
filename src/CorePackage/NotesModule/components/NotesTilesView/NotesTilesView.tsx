@@ -17,8 +17,9 @@ export class NotesTilesView extends React.PureComponent<INotesTilesProps> {
             return (
                 <NotesTile
                     key={note.id}
+                    style={{height: '20%'}}
                     isActive={note.id === activeNoteId}
-                    noteContent={note}
+                    note={note}
                     onActive={setActiveNote}
                 />
             );

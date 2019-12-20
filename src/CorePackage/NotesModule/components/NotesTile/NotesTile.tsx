@@ -3,25 +3,41 @@ import styles from '../NotesTile/NotesTile.module.css';
 import { INote } from '../../interfaces/INote';
 import { classList } from '../../../MainModule/common/classList';
 
-interface INoteTileProps {
+interface INoteTileProps extends React.HTMLAttributes<HTMLElement> {
     isActive: boolean;
-    noteContent: INote;
+    note: INote;
     onActive: (noteId: string) => void;
 }
 
 export class NotesTile extends React.PureComponent<INoteTileProps> {
     public render(): ReactNode {
-        const { isActive, noteContent, onActive } = this.props;
+        const { isActive, note, onActive } = this.props;
 
         return (
             <div
                 className={classList({
                     [styles.tile]: true,
-                    [styles.active]: isActive,
+                    [styles.activeTile]: isActive,
                 })}
-                onClick={() => onActive(noteContent.id)}
+                onClick={() => onActive(note.id)}
+                {...this.props}
             >
-                {noteContent.content}
+                <div
+                    className={classList({
+                        [styles.title]: true,
+                        [styles.activeTitle]: isActive,
+                    })}
+                >
+                    {note.title}
+                </div>
+                <div
+                    className={classList({
+                        [styles.date]: true,
+                        [styles.activeDate]: isActive,
+                    })}
+                >
+                    {note.createdAt}
+                </div>
             </div>
         );
     }

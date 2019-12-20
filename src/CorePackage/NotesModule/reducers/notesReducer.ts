@@ -11,7 +11,8 @@ export function notesReducer(
         case SetActiveNoteAction.type: {
             return {
                 ...state,
-                activeNoteId: action.noteId,
+                activeNoteId:
+                    state.activeNoteId === action.noteId ? null : action.noteId,
             };
         }
 
