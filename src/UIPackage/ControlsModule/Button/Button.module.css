@@ -1,0 +1,21 @@
+button {
+    height: inherit;
+    width: inherit;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--color-active);
+    color: var(--color-font-major);
+    outline-style: none;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background: var(--color-button-hover);
+}
+
+button:active {
+    background: var(--color-button-active);
+}

@@ -1,0 +1,13 @@
+.header {
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    grid-area: header;
+    background: var(--color-surface-top);
+}
+
+.overNotes {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    padding: 0 3rem;
+}
