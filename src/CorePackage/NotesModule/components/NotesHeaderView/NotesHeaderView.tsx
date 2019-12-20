@@ -1,9 +1,13 @@
 import React, { ReactNode } from 'react';
 import { Button } from '../../../../UIPackage/ControlsModule';
 
-import styles from '../NotesHeader/NotesHeader.module.css';
+import styles from './NotesHeaderView.module.css';
 
-export class NotesHeader extends React.PureComponent {
+interface INotesHeaderProps {
+    addNote: () => void;
+}
+
+export class NotesHeaderView extends React.PureComponent<INotesHeaderProps> {
     public render(): ReactNode {
         return (
             <div className={styles.header}>
@@ -11,6 +15,7 @@ export class NotesHeader extends React.PureComponent {
                     <Button
                         style={{ height: '3.5rem', width: '6.5rem' }}
                         text={'New'}
+                        onClick={this.props.addNote}
                     />
                 </div>
                 <div />
