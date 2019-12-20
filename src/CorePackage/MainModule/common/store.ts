@@ -25,6 +25,12 @@ const initialState: IRootState = {
             content: 'Ipsum2',
             createdAt: '19 Apr, 2020',
         },
+        {
+            id: generateID(),
+            title: 'Lorem1',
+            content: 'Ipsum1',
+            createdAt: '12 Mar, 2019',
+        },
     ],
     activeNoteId: null,
     selectedNotesIds: [],

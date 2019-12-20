@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch: Dispatch<SetActiveNoteAction>) => ({
         dispatch(new SetActiveNoteAction(noteId)),
 });
 
-export const Notes = connect(
+export const NotesTiles = connect(
     mapStateToProps,
     mapDispatchToProps,
 )(NotesTilesView);

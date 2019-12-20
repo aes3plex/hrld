@@ -1,6 +1,0 @@
-.editor {
-    grid-area: editor;
-    background: var(--color-surface-top);
-    background-clip: content-box;
-    padding: 0.2rem 0;
-}
