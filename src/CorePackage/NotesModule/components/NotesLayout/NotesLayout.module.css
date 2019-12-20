@@ -1,0 +1,12 @@
+.notes {
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+        'header header'
+        'tiles editor'
+        'footer footer';
+    height: 100%;
+    width: 100%;
+    background: var(--color-background);
+}

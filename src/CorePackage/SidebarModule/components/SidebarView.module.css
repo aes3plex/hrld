@@ -3,7 +3,12 @@
 }
 
 .sidebar {
+    display: grid;
+    align-content: center;
+    position: relative;
     background: var(--color-surface-top);
+    box-shadow: 2rem 0.4rem 7rem rgba(var(--color-sidebar-shadow), 0.05),
+        0 0.4rem 0.4rem rgba(var(--color-black-shadow), 0.25);
 }
 
 .tabContent {

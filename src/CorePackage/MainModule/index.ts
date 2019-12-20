@@ -1,3 +1,3 @@
-export * from './components/App'
+export * from './components/App/App'
 
 export * from './interfaces/IRootState'

@@ -1,10 +1,11 @@
 import React, { ReactNode } from 'react';
 import { Provider } from 'react-redux';
-import { store } from '../common/store';
-import { Content } from '../../ContentModule';
+import { store } from '../../common/store';
+import { Sidebar } from '../../../SidebarModule';
+import { Content } from '../../containers/Content';
 
 import styles from './App.module.css';
-import { Sidebar } from '../../SidebarModule';
+
 
 export class App extends React.PureComponent {
     public render(): ReactNode {

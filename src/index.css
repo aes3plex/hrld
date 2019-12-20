@@ -16,10 +16,15 @@ body {
 .dark {
     font-family: 'Roboto', sans-serif !important;
 
+    --color-black-shadow: 0, 0, 0;
+    --color-sidebar-shadow: 35, 31, 32;
+
     --color-background: #1F1E24;
     --color-surface-top: #2D2C33;
+    --color-surface-bottom: #232228;
     --color-font-regular: #ADADBE;
     --color-font-major: #FFFFFF;
+    --color-font-minor: #8A8A9B;
     --color-active: #F51D46;
 }
 
